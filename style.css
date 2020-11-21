@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('https://cdn.britannica.com/36/198336-050-A9B8AA86/Chadwick-Boseman-Tchalla-Black-Panther-Black.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: auto;
+    width: 100vw;
+    color: white;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title {
+    color: white;
+    margin: 0 auto;
+    font-size: 2.5em;
+}
+
+span {
+    text-shadow: 1px 1px #D69300;
+    margin: 0 auto;
+}
+
+#img-div {
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #333;
+    line-height: 1.5;
+    max-width: auto;
+}
+
+img {
+    max-height: 12em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15em;
+    padding-top: 2em;
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+    font-size: xx-small;
+}
+
+#tribute-info {
+    text-shadow: 2px 2px #e2dedb;
+    font-size: 1.2em;
+    color: rgb(10, 8, 10);
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1984F0;
+    margin: 0 auto;
+}
+
+footer>ul {
+    list-style: none;
+    text-align: center;
+}
+
+
+/* links */
+
+#tribute-link {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 0 auto;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1em;
+}
+
+a:active {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:focus {
+    outline: 3px solid orange;
+}
+
+a:hover {
+    color: #D69300;
+}
+
+
+/*Classes*/
+
+.shadow {
+    -moz-box-shadow: 3px 3px 5px 6px rgb(26, 24, 24);
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(26, 24, 24);
+    box-shadow: 3px 3px 5px 6px rgb(26, 24, 24);
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+
+/* Animation */
+
+.ease-in {
+    animation: stretch 1.5s ease-out 0s alternate 1
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.1);
+        background-color: white;
+        border-radius: 100%;
+    }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #img-div {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5)
+    }
+}
+
+
+/*Media Queries*/
+
+@media(min-width: 900px) {
+    #title {
+        color: white;
+        margin: 0 auto;
+        font-size: 4.5em;
+    }
+    span {
+        text-shadow: 1px 1px #D69300;
+        margin: 0 auto;
+        font-size: 2.5em;
+    }
+    #tribute-info {
+        text-shadow: 2px 2px #e2dedb;
+        font-size: 2.2em;
+        color: rgb(10, 8, 10);
+        font-weight: 400;
+    }
+    #tribute-link {
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 1px solid black;
+        width: 100%;
+        text-decoration: none;
+        padding: 1em;
+        font-size: 2em;
+    }
+    footer {
+        background-color: #1984F0;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+    footer>ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
