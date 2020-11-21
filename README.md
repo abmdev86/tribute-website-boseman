@@ -1,4 +1,6 @@
-# Chadwick Boseman Tribute page ([View](#))
+# Chadwick Boseman Tribute page ([View](https://amwebdev86.github.io/tribute-website-boseman/))
+
+![imgur](https://imgur.com/a/TtD0vca)
 
 ### A triubute to one of the most beloved and talented actors of our time
 
