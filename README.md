@@ -1,7 +1,5 @@
 # Chadwick Boseman Tribute page ([View](https://amwebdev86.github.io/tribute-website-boseman/))
 
-![imgur](https://imgur.com/a/TtD0vca)
-
 ### A triubute to one of the most beloved and talented actors of our time
 
 This is a website designed only with HTML and CSS giving tribute to Chadwick Boseman. This site is also an example of HTML and CSS skills used to develop a website. The project was outlined following the [FreeCodeCamp.org](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) Responsive Web Design Project.
